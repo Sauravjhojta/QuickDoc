@@ -23,6 +23,12 @@ app.use("/api/admin", adminRouter)
 app.use('/api/doctor',doctorRouter)
 app.use('/api/user',userRouter)
 
+const cors = require("cors");
+app.use(cors({
+  origin: "https://quick-doc-t12r.vercel.app/", 
+  credentials: true
+}));
+
 
 
 app.get("/", (req, res) => {
