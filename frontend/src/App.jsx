@@ -12,12 +12,14 @@ import Footer from './components/Footer'
 import Appointments from './pages/Appointments'
  import { ToastContainer, toast } from 'react-toastify';
  import 'react-toastify/dist/ReactToastify.css';
+import ScrollTop from './components/ScrollTop'
 
 const App = () => {
   return (
     <div className='mx-4 sm:mx-[10%]'>
       <ToastContainer/>
       <Navbar/>
+      <ScrollTop/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/doctors' element={<Doctor/>}/>
